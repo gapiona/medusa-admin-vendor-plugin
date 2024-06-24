@@ -33,7 +33,7 @@ export class ResponseError extends Error {
 
 async function fetchWrapper<T>({
   url,
-  baseURL = process.env.MEDUSA_ADMIN_API_BASE_URL,
+  baseURL = process.env.MEDUSA_ADMIN_VENDOR_BASE_URL,
   responseType = "json",
   options = {},
 }: RequestArgs): Promise<T> {
